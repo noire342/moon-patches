@@ -1,0 +1,7 @@
+{
+  "name": "moon-branding-renderer",
+  "private": true,
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
+  "dependencies": { "sharp": "0.34.5" }
+}

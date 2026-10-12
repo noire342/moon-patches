@@ -1,0 +1,7 @@
+Moon Patches is an independent modified distribution of Morphe Patches.
+The original Morphe logos, wordmarks and startup animations are not distributed here.
+Their resource identifiers and launcher aliases are retained for update compatibility,
+but their artwork has been replaced with Moon artwork under GPL-3.0-only.
+Morphe names and trademarks belong to their respective holders. No trademark rights
+or endorsement are granted. See https://github.com/MorpheApp/morphe-branding
+The full upstream NOTICE remains available in MORPHE_LICENSE_NOTICE.TXT.

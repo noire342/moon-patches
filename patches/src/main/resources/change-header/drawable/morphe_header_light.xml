@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified 2026-10-12 by Moon Patches contributors. Based on Morphe Patches; see NOTICE. -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android" android:src="@drawable/moon_wordmark_light" android:gravity="center" android:antialias="true" android:filter="true"/>

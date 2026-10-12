@@ -1,0 +1,15 @@
+name: Bug report
+description: Report a reproducible Moon Patches issue
+body:
+  - type: textarea
+    attributes:
+      label: Versions
+      description: Moon bundle, Morphe, YouTube and Android versions
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Behavior and reproduction
+      description: Expected behavior, actual behavior and steps. Remove room codes, invitations and account data.
+    validations:
+      required: true

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android" android:src="@drawable/moon_wordmark_dark" android:gravity="center" android:antialias="true" android:filter="true"/>

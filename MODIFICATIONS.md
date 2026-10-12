@@ -1,0 +1,91 @@
+# Modified distribution notice
+
+Moon Patches is an independent modified distribution of Morphe Patches at commit `e5464395441e916b643af4e2175c4e253e6df487`. The modifications listed below were made by Moon Patches contributors on 2026-10-12 for version 1.47.1. They include Nostr rooms and player integration, Moon artwork, settings and About branding, public source/build configuration, tests and documentation. Original copyright headers and the complete NOTICE are retained. No endorsement by the upstream authors is implied.
+
+Modified inherited files:
+
+- `.github/ISSUE_TEMPLATE/bug_report.yml`
+- `.github/ISSUE_TEMPLATE/config.yml`
+- `.github/ISSUE_TEMPLATE/feature_request.yml`
+- `.github/PULL_REQUEST_TEMPLATE.md`
+- `.gitignore`
+- `CHANGELOG.md`
+- `README.md`
+- `extensions/proguard-rules.pro`
+- `extensions/shared-youtube/library/src/main/java/app/morphe/extension/shared/patches/CustomBrandingPatch.java`
+- `extensions/shared-youtube/library/src/main/java/app/morphe/extension/shared/sponsorblock/SegmentPlaybackController.java`
+- `extensions/shared/library/src/main/java/app/morphe/extension/shared/settings/preference/about/AboutDialogStyle.java`
+- `extensions/shared/library/src/main/java/app/morphe/extension/shared/settings/preference/about/AboutRoutes.java`
+- `extensions/shared/library/src/main/java/app/morphe/extension/shared/settings/preference/about/AboutWebViewDialog.java`
+- `extensions/shared/library/src/main/java/app/morphe/extension/shared/settings/preference/about/LicensesDialog.java`
+- `extensions/shared/library/src/main/java/app/morphe/extension/shared/settings/preference/about/MorpheAboutPreference.java`
+- `extensions/shared/library/src/main/java/app/morphe/extension/shared/settings/preference/about/MorpheCreditsDialog.java`
+- `extensions/youtube/build.gradle.kts`
+- `extensions/youtube/src/main/java/app/morphe/extension/youtube/patches/ChangeHeaderPatch.java`
+- `extensions/youtube/src/main/java/app/morphe/extension/youtube/patches/VideoInformation.java`
+- `extensions/youtube/src/main/java/app/morphe/extension/youtube/sponsorblock/SponsorBlockUtils.java`
+- `extensions/youtube/src/main/java/app/morphe/extension/youtube/sponsorblock/YouTubeSponsorBlockConfig.java`
+- `extensions/youtube/src/main/java/app/morphe/extension/youtube/sponsorblock/ui/SponsorBlockViewController.java`
+- `gradle.properties`
+- `patches-bundle.json`
+- `patches-bundle.png`
+- `patches-list.json`
+- `patches/build.gradle.kts`
+- `patches/src/main/kotlin/app/morphe/patches/reddit/misc/settings/SettingsPatch.kt`
+- `patches/src/main/kotlin/app/morphe/patches/shared/layout/branding/AddBrandLicensePatch.kt`
+- `patches/src/main/kotlin/app/morphe/patches/shared/layout/branding/BaseCustomBrandingPatch.kt`
+- `patches/src/main/kotlin/app/morphe/patches/shared/misc/settings/SettingsPatch.kt`
+- `patches/src/main/kotlin/app/morphe/patches/youtube/layout/branding/header/ChangeHeaderPatch.kt`
+- `patches/src/main/resources/addresources/values-it-rIT/shared/strings.xml`
+- `patches/src/main/resources/addresources/values/music/strings.xml`
+- `patches/src/main/resources/addresources/values/shared-youtube/arrays.xml`
+- `patches/src/main/resources/addresources/values/shared/strings.xml`
+- `patches/src/main/resources/addresources/values/youtube/arrays.xml`
+- `patches/src/main/resources/addresources/values/youtube/strings.xml`
+- `patches/src/main/resources/change-header/drawable-hdpi/morphe_header_custom_dark.png`
+- `patches/src/main/resources/change-header/drawable-hdpi/morphe_header_custom_light.png`
+- `patches/src/main/resources/change-header/drawable-xhdpi/morphe_header_custom_dark.png`
+- `patches/src/main/resources/change-header/drawable-xhdpi/morphe_header_custom_light.png`
+- `patches/src/main/resources/change-header/drawable-xxhdpi/morphe_header_custom_dark.png`
+- `patches/src/main/resources/change-header/drawable-xxhdpi/morphe_header_custom_light.png`
+- `patches/src/main/resources/change-header/drawable-xxxhdpi/morphe_header_custom_dark.png`
+- `patches/src/main/resources/change-header/drawable-xxxhdpi/morphe_header_custom_light.png`
+- `patches/src/main/resources/change-header/drawable/morphe_header_dark.xml`
+- `patches/src/main/resources/change-header/drawable/morphe_header_light.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_foreground_black.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_foreground_dark.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_foreground_light.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_foreground_play.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_foreground_play_black.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_monochrome_black.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_monochrome_custom.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_monochrome_dark.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_monochrome_light.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_monochrome_play.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_adaptive_monochrome_play_black.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_notification_icon_black.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_notification_icon_custom.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_notification_icon_dark.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_notification_icon_light.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_notification_icon_play.xml`
+- `patches/src/main/resources/custom-branding/drawable/morphe_notification_icon_play_black.xml`
+- `patches/src/main/resources/custom-branding/mipmap-hdpi/morphe_adaptive_background_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-hdpi/morphe_adaptive_foreground_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-mdpi/morphe_adaptive_background_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-mdpi/morphe_adaptive_foreground_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-xhdpi/morphe_adaptive_background_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-xhdpi/morphe_adaptive_foreground_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-xxhdpi/morphe_adaptive_background_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-xxhdpi/morphe_adaptive_foreground_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-xxxhdpi/morphe_adaptive_background_custom.png`
+- `patches/src/main/resources/custom-branding/mipmap-xxxhdpi/morphe_adaptive_foreground_custom.png`
+- `patches/src/main/resources/custom-branding/raw/morphe_startup_animation.json`
+- `patches/src/main/resources/custom-branding/raw/morphe_startup_animation_play.json`
+- `patches/src/main/resources/license/MORPHE_BRANDING.TXT`
+- `patches/src/main/resources/settings/drawable/morphe_settings_icon_bold_dark.xml`
+- `patches/src/main/resources/settings/drawable/morphe_settings_icon_bold_light.xml`
+- `patches/src/main/resources/settings/drawable/morphe_settings_icon_dark.xml`
+- `patches/src/main/resources/settings/drawable/morphe_settings_icon_light.xml`
+- `settings.gradle.kts`
+
+New rooms code, tests, Moon artwork and project documentation are additions dated 2026-10-12. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [the artwork replacement manifest](docs/branding/replaced-upstream-assets.json).

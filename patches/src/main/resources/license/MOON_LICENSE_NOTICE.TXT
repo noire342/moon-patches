@@ -1,0 +1,25 @@
+Moon Patches is an independent modified distribution of Morphe Patches.
+Copyright 2026 Moon Patches contributors. New code and Moon assets: GPL-3.0-only.
+
+Modifications dated 2026-10-12: Nostr rooms, Moon branding and integration,
+project About links, build and release configuration, tests and documentation.
+Original copyright headers, credits and Morphe's Section 7 terms are retained.
+Morphe and other product names belong to their holders; no endorsement is implied.
+No original Morphe logos, header graphics or startup artwork are redistributed.
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of version 3 of the GNU General Public License as published by the
+Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+The full GPL text is supplied in MORPHE_LICENSE.TXT and the original NOTICE in
+MORPHE_LICENSE_NOTICE.TXT. The About > License notices dialog contains the GPL,
+Morphe NOTICE and license notices for the bundled libraries.
+
+Corresponding source, credits and build instructions:
+https://github.com/noire342/moon-patches
+Source for version 1.47.1:
+https://github.com/noire342/moon-patches/tree/v1.47.1

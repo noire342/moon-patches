@@ -1,0 +1,38 @@
+name: Build Moon Patches
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install SDK
+        run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+      - name: Prepare pinned source dependencies
+        run: |
+          git clone https://github.com/MorpheApp/morphe-patcher ../morphe-patcher
+          git -C ../morphe-patcher checkout 5eacde46237f2fe657eb9bfbe90d2528d248a336
+          git clone https://github.com/MorpheApp/morphe-patches-library ../morphe-patches-library
+          git -C ../morphe-patches-library checkout 941a18a5992d5c929dc3f438cb05c8944091c8e3
+      - name: Test and build
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.MORPHE_PACKAGES_TOKEN || github.token }}
+        run: bash gradlew :room-core:test buildAndroid generatePatchesList --no-daemon --max-workers=2 --no-parallel
+      - uses: actions/upload-artifact@v4
+        with:
+          name: moon-patches-build
+          path: |
+            patches/build/libs/*.mpp
+            room-core/build/reports/tests/test/
