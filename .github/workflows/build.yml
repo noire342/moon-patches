@@ -16,7 +16,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
+        with:
+          cmdline-tools-version: '12266719'
+          packages: 'platform-tools'
+          log-accepted-android-sdk-licenses: false
       - name: Install SDK
         run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
       - name: Prepare pinned source dependencies
